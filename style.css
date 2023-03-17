@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Regular'), local('TT-Lakes-Medium'),
-    url('/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff2') format('woff2'),
-    url('/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff') format('woff'),
-    url('/font/TTLakes-Regular/TTLakes-Regular.ttf') format('truetype');
+    url('/assets/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff2') format('woff2'),
+    url('/assets/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff') format('woff'),
+    url('/assets/font/TTLakes-Regular/TTLakes-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Medium'), local('TT-Lakes-Medium'),
-    url('/font/TTLakes-Medium/TTLakes-Medium.woff2') format('woff2'),
-    url('/font/TTLakes-Medium/TTLakes-Medium.woff') format('woff'),
-    url('/font/TTLakes-Medium/TTLakes-Medium.ttf') format('truetype');
+    url('/assets/font/TTLakes-Medium/TTLakes-Medium.woff2') format('woff2'),
+    url('/assets/font/TTLakes-Medium/TTLakes-Medium.woff') format('woff'),
+    url('/assets/font/TTLakes-Medium/TTLakes-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Bold'), local('TT-Lakes-Bold'),
-    url('/font/TTLakes/TTLakes-Bold/TTLakesCondensed-Bold.woff2') format('woff2'),
-    url('/font/TTLakes-Bold/TTLakesCondensed-Bold.woff') format('woff'),
-    url('/font/TTLakes-Bold/TTLakesCondensed-Bold.ttf') format('truetype');    
+    url('/assets/font/TTLakes/TTLakes-Bold/TTLakesCondensed-Bold.woff2') format('woff2'),
+    url('/assets/font/TTLakes-Bold/TTLakesCondensed-Bold.woff') format('woff'),
+    url('/assets/font/TTLakes-Bold/TTLakesCondensed-Bold.ttf') format('truetype');    
   font-weight: 700;
   font-style: normal;
 }
@@ -60,7 +60,7 @@ html {
   list-style: none;
 }
 .vertical-line {
-  background-image: url(/img/divider.svg);
+  background-image: url(/assets/img/divider.svg);
   width: 2px;
   height: 32px;
   flex-shrink: 0;
@@ -130,7 +130,7 @@ html {
   padding: 24px 0 24px 16px;
 }
 .main__header-text::before {
-  content: url('/img/highlight.svg');
+  content: url('/assets/img/highlight.svg');
   margin: -1px 0 0 -16px;
   position: absolute;
 }
@@ -181,7 +181,7 @@ html {
   padding-left: 0;
 }
 .main__button::before {
-  content: url('/img/icon.svg');
+  content: url('/assets/img/icon.svg');
   width: 24px;
   height: 24px;
   vertical-align: middle;
