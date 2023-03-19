@@ -1,8 +1,10 @@
 @font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Regular'), local('TT-Lakes-Medium'),
-    url('/assets/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff2') format('woff2'),
-    url('/assets/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff') format('woff'),
+    url('/assets/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff2')
+      format('woff2'),
+    url('/assets/font/TTLakes/TTLakes-Regular/TTLakes-Regular.woff')
+      format('woff'),
     url('/assets/font/TTLakes-Regular/TTLakes-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -19,9 +21,11 @@
 @font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Bold'), local('TT-Lakes-Bold'),
-    url('/assets/font/TTLakes/TTLakes-Bold/TTLakesCondensed-Bold.woff2') format('woff2'),
+    url('/assets/font/TTLakes/TTLakes-Bold/TTLakesCondensed-Bold.woff2')
+      format('woff2'),
     url('/assets/font/TTLakes-Bold/TTLakesCondensed-Bold.woff') format('woff'),
-    url('/assets/font/TTLakes-Bold/TTLakesCondensed-Bold.ttf') format('truetype');    
+    url('/assets/font/TTLakes-Bold/TTLakesCondensed-Bold.ttf')
+      format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -114,8 +118,8 @@ html {
   font-size: 16px;
   font-weight: 500;
   width: 100%;
-  font-family: 'TT Lakes', sans-serif;;
-  background: #F8F8F8;
+  font-family: 'TT Lakes', sans-serif;
+  background: #f8f8f8;
 }
 .main-header {
   margin: 0 auto;
@@ -205,10 +209,9 @@ html {
 .nav__elem--profile,
 .main__description--first-half,
 .main__description--second-half,
-.main-features-list__item--brands
- {
+.main-features-list__item--brands {
   display: none;
-} 
+}
 
 /* main end*/
 
@@ -240,7 +243,7 @@ html {
   .main__picture {
     width: 360px;
     height: 208px;
-    border-radius: 6px; 
+    border-radius: 6px;
   }
   .main-features-list {
     padding: 2px 24px 14px;
@@ -249,14 +252,12 @@ html {
   .nav__elem--right-vertical-line,
   .nav__elem--call,
   .nav__elem--chat,
-  .nav__elem--profile
-  {
+  .nav__elem--profile {
     display: block;
   }
   .nav__elem--middle-vertical-line {
     display: none;
   }
-  
 }
 
 @media (min-width: 1120px) {
@@ -315,12 +316,11 @@ html {
     width: 531px;
     height: 307px;
     border-radius: 6px;
-    }
-  
+  }
+
   .main-features-list {
     padding: 2px 32px;
     flex-wrap: wrap;
-   
   }
   .main-features-list__item--special-prices {
     display: none;
@@ -340,5 +340,4 @@ html {
   .main-features-list__item--brands {
     display: block;
   }
-
 }
