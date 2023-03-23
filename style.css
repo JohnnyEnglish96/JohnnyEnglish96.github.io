@@ -80,12 +80,12 @@
   }
   .header-buttons__button:hover,
   .first-column-button:hover,
-  .main-footer__second-column:hover,
-  .main-footer__third-column:hover,
   .header-buttons__button:focus,
   .first-column-button:focus,
-  .main-footer__second-column:focus,
-  .main-footer__third-column:focus {
+  .header-buttons__button:active,
+  .first-column-button:active,
+  .header-buttons__button:active,
+  .first-column-button:active{
     opacity: 0.6;
   }
   .header-buttons__left-column {
@@ -115,23 +115,29 @@
     vertical-align: middle;
     transition: all 0.3s ease;
   }    
-  .main-nav__link:hover .main-nav__link-address::before,
-  .main-nav__link:focus .main-nav__link-address::before,
-  .main-nav__link:active .main-nav__link-address::before{
+  .main-nav__link:hover .main-nav__link-address::before{
     content: url('/assets/img/highlight.svg');
     position: absolute;
     width: 4px;
     height: 32px;
     top: -10px;
-    left: -24px;
-    
+    left: -24px;    
   }
   .main-nav__link-address:hover,
-  .main-nav__link-address:focus,
-  .main-nav__link-address:active{
+  .main-nav__link-address:active,
+  .main-nav__link-address:focus {
     color: #7E7E82;
     opacity: 0.6;
-  
+  }
+  .main-nav__link-address:hover::before,
+  .main-nav__link-address:active::before,
+  .main-nav__link-address:focus::before {
+    content: url('/assets/img/highlight.svg');
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    top: -10px;
+    left: -24px;   
   }
 
   .main-nav__link {
@@ -142,14 +148,6 @@
     margin-bottom: 32px;    
   }
  
-  /* .main-nav__link-address:hover::before {
-    content: url('/assets/img/highlight.svg');
-    position: absolute;
-    width: 4px;
-    height: 32px;
-    top: -10px;
-    left: -24px;
-  } */
 
   /* main-nav end*/
   
@@ -186,7 +184,14 @@
     font-size: 16px;
     color: #1B1C21;
     display: inline-block;
+    transition: all 0.5s ease;   
   }
+  .second-column-email:hover,
+  .second-column-email:active,
+  .second-column-email:focus {
+    opacity: .6;   
+  }
+  
   .main-footer__third-column {
     padding-bottom: 30px;
     transition: all 0.5s ease;
@@ -213,6 +218,12 @@
     letter-spacing: -0.6px;
     font-weight: 800;
     line-height: 133%;
+    transition: all 0.5s ease;
+  }
+  .third-column-num:hover,
+  .third-column-num:active,
+  .third-column-num:focus {
+    opacity: 0.6;
   }
   
   /* main-footer end*/
