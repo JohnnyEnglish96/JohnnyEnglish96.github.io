@@ -115,7 +115,9 @@
     vertical-align: middle;
     transition: all 0.3s ease;
   }    
-  .main-nav__link:hover .main-nav__link-address::before{
+  .main-nav__link:hover .main-nav__link-address::before,
+  .main-nav__link:focus .main-nav__link-address::before,
+  .main-nav__link:active .main-nav__link-address::before{
     content: url('/assets/img/highlight.svg');
     position: absolute;
     width: 4px;
@@ -124,7 +126,9 @@
     left: -24px;
     
   }
-  .main-nav__link-address:hover {
+  .main-nav__link-address:hover,
+  .main-nav__link-address:focus,
+  .main-nav__link-address:active{
     color: #7E7E82;
     opacity: 0.6;
   
