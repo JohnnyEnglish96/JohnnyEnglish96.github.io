@@ -19,16 +19,24 @@ function createSwiper() {
       320: {
         slidesPerView: 1.3,
       },
+      400: {
+        slidesPerView: 1.8,
+        
+      },
       480: {
-        slidesPerView: 2,
+        slidesPerView: 2.3,
+        
+      },
+      560: {
+        slidesPerView: 2.8,
         spaceBetween: 20,
       },
       640: {
-        slidesPerView: 2.8,
-        spaceBetween: 25,
+        slidesPerView: 3.3,
+        
       },
     },
-    slidesPerView: 2,
+    slidesPerView: 1.3,
     slidesOffsetAfter: 16,
     slidesOffsetBefore: 16,
     spaceBetween: 16,
