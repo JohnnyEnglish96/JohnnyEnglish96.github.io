@@ -15,28 +15,8 @@ let mySwiper;
 
 function createSwiper() {
   mySwiper = new Swiper('.swiper-container', {
-    breakpoints: {
-      320: {
-        slidesPerView: 1.3,
-      },
-      400: {
-        slidesPerView: 1.8,
-        
-      },
-      480: {
-        slidesPerView: 2.3,
-        
-      },
-      560: {
-        slidesPerView: 2.8,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 3.3,
-        
-      },
-    },
-    slidesPerView: 1.3,
+    touchRatio: 1,
+    slidesPerView: 'auto',
     slidesOffsetAfter: 16,
     slidesOffsetBefore: 16,
     spaceBetween: 16,
@@ -46,6 +26,10 @@ function createSwiper() {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+    },
+    mousewheel: {
+      invert: true,
+      sensitivity: 1,
     },
   });
 }
@@ -76,3 +60,5 @@ function buttonCheck() {
     buttonSpan.classList.toggle('footer-text');
   }
 }
+
+
